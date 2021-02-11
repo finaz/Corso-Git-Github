@@ -37,16 +37,32 @@ echo "hello!"
 
 --> TRACCIA SAYHELLO.SH + COMMIT
 1. git add sayhello.sh
-2. git commit -a
+2. git commit
+3. Inserisci messaggio di commit chiaro per aiutare a comprendere quanto hai fatto!
 
 ***
 
 !!! DEVI INSERIRE INFORMAZIONI UTENZA !!!
 1. git config --global user.email 'xxxxxxxx@yyyyy.com'
 2. git config --global user.name 'xyxyxyx'
-3. rifai: git commit -a
+3. rifai: git commit
 
 ***
 
+--> VISUALIZZA QUANTO HAI FATTO
+1. git log
+2. visualizza ultimo commit fatto
+	* git show
+3. visualizza un commit diverso dall'ultimo
+	* git show [id_commit]
 
+--> MODIFICARE FILE ESISTENTE
+1. vim sayhello.sh
+2. inserisci la modifica che desideri
+3. salva [:wq]
+4. osserva la modifica fatta dal branch master
+	* git status
+5. git add sayhello.sh
+6. git commit -a [attenzione, perchè l'opzione -a include tutto i file aperti/modificati nel commit]
+7. inserisci messaggio di commit
 
