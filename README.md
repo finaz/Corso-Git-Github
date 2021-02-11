@@ -159,4 +159,20 @@ echo "hello!"
 
 ***
 
+# COLLABORAZIONE TRA DUE UTENTI
+Da Git a Github
+
+***
+
+* IN USER02
+1. git clone ssh://[user@]host.xz[:port]/path/to/repo.git
+2. "visualizza"
+3. git branch
+4. git branch -a
+
+* IN USER01
+1. vim sayhello.sh
+2. git add sayhello.sh
+3. git commit -a
+4. messaggio di commit
 
