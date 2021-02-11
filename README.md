@@ -129,12 +129,28 @@ echo "hello!"
 2. git branch -d test02
 3. "visualizza"
 
---> MODALITA' CHERRY
+--> MODALITA' CHERRY-PICK
 1. git branch test03
 2. git checkout test03
 3. vim sayhello.sh
 4. git add sayhello.sh
 5. git commit -a
 6. inserisci messaggio di commit
+7. "visualizza"
+8. git checkout master
+9. git cherry-pick [id_commit]
+10. git branch -d test03
+11. git branch -D test03
+--> visualizza
+
+***
+
+## FINE PRIMA PARTE
+
+***
+
+#SECONDA PARTE - DA GIT A GITHUB
+
+***
 
 
