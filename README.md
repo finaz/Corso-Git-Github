@@ -122,5 +122,19 @@ echo "hello!"
 22. git add sayhello.sh
 23. git commit -a
 24. inserisci messaggio di commit
+25. "visualizza"
+
+--> RIMUOVERE BRANCH CHE NON SERVONO
+1. git branch -d test01
+2. git branch -d test02
+3. "visualizza"
+
+--> MODALITA' CHERRY
+1. git branch test03
+2. git checkout test03
+3. vim sayhello.sh
+4. git add sayhello.sh
+5. git commit -a
+6. inserisci messaggio di commit
 
 
