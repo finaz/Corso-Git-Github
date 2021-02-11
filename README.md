@@ -86,5 +86,26 @@ echo "hello!"
 5. git commit -a
 6. inserisci messaggio di commit
 
+--> VISUALIZZA QUANTO E' STATO FATTO
+1. git log --graph
+2. git log --graph --all --decorate
+
+--> PORTARE LE MODIFICHE DA BRANCH TEST01 A BRANCH MASTER [AGGIORNARE I COMMIT DA BRANCH A BRANCH]
+1. git checkout master
+2. git merge test01
+3. visualizza:
+	* git log --graph --all --decorate
+
+--> SIMULAZIONE DOPPIO BRANCH - CONFLITTO
+1. git branch test02
+2. restando su branch master:
+	* vim sayhello.sh
+3. git status
+4. git diff
+5. git add sayhello.sh
+6. git commit -a
+7. inserisci messaggio di commit
+
+
 
 
