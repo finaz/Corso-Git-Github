@@ -175,4 +175,15 @@ Da Git a Github
 2. git add sayhello.sh
 3. git commit -a
 4. messaggio di commit
+5. "visualizza" in user01 e in user02
+
+* IN USER02
+1. git fetch
+2. "visualizza"
+3. per vedere qualche info in più:
+	* git branch -avv
+4. git merge origin/master
+5. è possibile unire fetch e merge in un unico comando
+	* git pull
+
 
