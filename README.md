@@ -186,4 +186,23 @@ Da Git a Github
 5. è possibile unire fetch e merge in un unico comando
 	* git pull
 
+--> GITHUB
+* Crea nuova repository su github.com
+* In user01
+1. git remote add origin [id_github]
+2. ssh-keygen [con password]
+3. cat ~/.ssh/id_rsa.pub
+4. copia e incolla in github.com [settings > SSH keys]
+5. git branch -M master
+6. git push -u origin master
+7. inserire username e la password di github
 
+--> PASSARE A SSH
+1. cat .git/config
+2. prendi url ssh da github.com
+3. vim .git/config
+4. cambia url [remote "origin"] all'interno del file con quello copiato da github
+5. vim sayhello.sh
+6. git add sayhello.sh
+7. git commit -a
+8. messaggio di commit
