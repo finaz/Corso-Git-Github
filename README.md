@@ -141,7 +141,13 @@ echo "hello!"
 9. git cherry-pick [id_commit]
 10. git branch -d test03
 11. git branch -D test03
---> visualizza
+12. "visualizza"
+
+--> TOGLIERE IL COMMIT
+1. per tornare al commit precedente:
+	* git reset
+2. per togliere il commit senza togliere modifiche fatte:
+	* git reset --soft [id_commit]
 
 ***
 
