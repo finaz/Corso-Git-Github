@@ -66,3 +66,25 @@ echo "hello!"
 6. git commit -a [attenzione, perchè l'opzione -a include tutto i file aperti/modificati nel commit]
 7. inserisci messaggio di commit
 
+--> VISUALIZZA QUANTO E' STATO FATTO
+1. git log
+2. git log --graph
+
+--> NUOVO BRANCH: UNITA' DI LAVORO DIRAMATA, FUORI DA BRANCH MASTER
+1. git branch test01
+2. visualizzare tutti i branch:
+	* git branch
+3. spostarsi di branch:
+	* git checkout test01
+
+--> MODIFICARE FILE IN NUOVO BRANCH
+1. vim sayhello.sh
+2. git status
+3. per vedere modifiche fatte:
+	* git diff
+4. git add sayhello.sh
+5. git commit -a
+6. inserisci messaggio di commit
+
+
+
