@@ -105,7 +105,22 @@ echo "hello!"
 5. git add sayhello.sh
 6. git commit -a
 7. inserisci messaggio di commit
-
-
+8. "visualizza"
+9. git checkout test02
+10. vim sayhello.sh
+11. git add sayhello.sh
+12. git commit -a
+13. inserisci messaggio di commit
+14. "visualizza"
+15. git checkout master
+16. git merge test02
+17. !!! CONFLITTO !!!
+18. git status
+19. vim sayhello.sh
+20. !!! RISOLVI CONFLITTO !!!
+21. git status
+22. git add sayhello.sh
+23. git commit -a
+24. inserisci messaggio di commit
 
 
