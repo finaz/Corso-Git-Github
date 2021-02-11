@@ -86,5 +86,12 @@ echo "hello!"
 5. git commit -a
 6. inserisci messaggio di commit
 
+***
 
+--> visualizza
+--> git checkout test02
+--> vim sayhello.sh
+--> git add sayhello.sh
+--> git commit -a
+--> inserisci messaggio di commit
 
