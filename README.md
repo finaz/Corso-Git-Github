@@ -8,9 +8,11 @@ Guida passo per passo al successo!
 1. USER01
 2. USER02
 
+
 * CREAZIONE CARTELLA DI LAVORO IN USER01
 1. mkdir project01
 2. cd project01
+
 
 * FAI PRIMO SCRIPT
 1. vim sayhello.sh
@@ -22,9 +24,11 @@ echo "hello!"
 ~
 ```
 
+
 * ASSEGNA PERMESSO DI ESECUZIONE E VERIFICA
 1. chmod +x sayhello.sh
 2. ./sayhello.sh
+
 
 * DAI FORMA ALLA DIRECTORY GIT!
 1. git init
@@ -34,6 +38,7 @@ echo "hello!"
 3. visualizza untracked del branch master con:
 	* git status
 	* troverai il nostro sayhello.sh
+
 
 * TRACCIA SAYHELLO.SH + COMMIT
 1. git add sayhello.sh
@@ -56,6 +61,7 @@ echo "hello!"
 3. visualizza un commit diverso dall'ultimo
 	* git show [id_commit] 
 
+
 * MODIFICARE FILE ESISTENTE
 1. vim sayhello.sh
 2. inserisci la modifica che desideri
@@ -65,6 +71,7 @@ echo "hello!"
 5. git add sayhello.sh
 6. git commit -a [attenzione, perchè l'opzione -a include tutto i file aperti/modificati nel commit]
 7. _inserisci messaggio di commit_
+
 
 * VISUALIZZA QUANTO E' STATO FATTO
 1. git log
@@ -80,6 +87,7 @@ echo "hello!"
 3. spostarsi di branch:
 	* git checkout test01
 
+
 * MODIFICARE FILE IN NUOVO BRANCH
 1. vim sayhello.sh
 2. git status
@@ -89,15 +97,18 @@ echo "hello!"
 5. git commit -a
 6. _inserisci messaggio di commit_
 
+
 * VISUALIZZA QUANTO E' STATO FATTO
 1. git log --graph
 2. git log --graph --all --decorate
+
 
 * PORTARE LE MODIFICHE DA BRANCH TEST01 A BRANCH MASTER [AGGIORNARE I COMMIT DA BRANCH A BRANCH]
 1. git checkout master
 2. git merge test01
 3. visualizza:
 	* git log --graph --all --decorate
+
 
 * SIMULAZIONE DOPPIO BRANCH - CONFLITTO
 1. git branch test02
@@ -126,6 +137,7 @@ echo "hello!"
 23. git commit -a
 24. _inserisci messaggio di commit_
 25. _visualizza_
+
 
 --> RIMUOVERE BRANCH CHE NON SERVONO
 1. git branch -d test01
