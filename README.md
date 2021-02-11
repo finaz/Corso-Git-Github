@@ -9,12 +9,12 @@ Guida passo per passo al successo!
 2. USER02
 
 <br />
-<br />
-<br />
+
 * CREAZIONE CARTELLA DI LAVORO IN USER01
 1. mkdir project01
 2. cd project01
 
+<br />
 
 * FAI PRIMO SCRIPT
 1. vim sayhello.sh
@@ -25,12 +25,14 @@ echo "hello!"
 ~
 ~
 ```
+<br />
 
 
 * ASSEGNA PERMESSO DI ESECUZIONE E VERIFICA
 1. chmod +x sayhello.sh
 2. ./sayhello.sh
 
+<br />
 
 * DAI FORMA ALLA DIRECTORY GIT!
 1. git init
@@ -41,11 +43,13 @@ echo "hello!"
 	* git status
 	* troverai il nostro sayhello.sh
 
+<br />
 
 * TRACCIA SAYHELLO.SH + COMMIT
 1. git add sayhello.sh
 2. git commit
 3. _Inserisci messaggio di commit chiaro per aiutare a comprendere quanto hai fatto!_
+<br />
 
 ***
 
@@ -55,6 +59,7 @@ echo "hello!"
 3. rifai: git commit
 
 ***
+<br />
 
 * VISUALIZZA QUANTO HAI FATTO
 1. git log
@@ -63,6 +68,7 @@ echo "hello!"
 3. visualizza un commit diverso dall'ultimo
 	* git show [id_commit] 
 
+<br />
 
 * MODIFICARE FILE ESISTENTE
 1. vim sayhello.sh
@@ -74,10 +80,12 @@ echo "hello!"
 6. git commit -a [attenzione, perchè l'opzione -a include tutto i file aperti/modificati nel commit]
 7. _inserisci messaggio di commit_
 
+<br />
 
 * VISUALIZZA QUANTO E' STATO FATTO
 1. git log
 2. git log --graph
+<br />
 
 ***
 
@@ -89,6 +97,7 @@ echo "hello!"
 3. spostarsi di branch:
 	* git checkout test01
 
+<br />
 
 * MODIFICARE FILE IN NUOVO BRANCH
 1. vim sayhello.sh
@@ -98,18 +107,21 @@ echo "hello!"
 4. git add sayhello.sh
 5. git commit -a
 6. _inserisci messaggio di commit_
+<br />
 
 
 * VISUALIZZA QUANTO E' STATO FATTO
 1. git log --graph
 2. git log --graph --all --decorate
 
+<br />
 
 * PORTARE LE MODIFICHE DA BRANCH TEST01 A BRANCH MASTER [AGGIORNARE I COMMIT DA BRANCH A BRANCH]
 1. git checkout master
 2. git merge test01
 3. visualizza:
 	* git log --graph --all --decorate
+<br />
 
 
 * SIMULAZIONE DOPPIO BRANCH - CONFLITTO
@@ -140,70 +152,78 @@ echo "hello!"
 24. _inserisci messaggio di commit_
 25. _visualizza_
 
+<br />
 
---> RIMUOVERE BRANCH CHE NON SERVONO
+* RIMUOVERE BRANCH CHE NON SERVONO
 1. git branch -d test01
 2. git branch -d test02
-3. "visualizza"
+3. _visualizza_
+<br />
 
---> MODALITA' CHERRY-PICK
+* MODALITA' CHERRY-PICK
 1. git branch test03
 2. git checkout test03
 3. vim sayhello.sh
 4. git add sayhello.sh
 5. git commit -a
-6. inserisci messaggio di commit
-7. "visualizza"
+6. _inserisci messaggio di commit_
+7. _visualizza_
 8. git checkout master
 9. git cherry-pick [id_commit]
 10. git branch -d test03
 11. git branch -D test03
-12. "visualizza"
+12. _visualizza_
+<br />
 
---> TOGLIERE IL COMMIT
+* TOGLIERE IL COMMIT
 1. per tornare al commit precedente:
 	* git reset
 2. per togliere il commit senza togliere modifiche fatte:
 	* git reset --soft [id_commit]
+<br />
 
 ***
 
 ## FINE PRIMA PARTE
 
 ***
+<br />
 
 #SECONDA PARTE - DA GIT A GITHUB
 
 ***
 
-# COLLABORAZIONE TRA DUE UTENTI
-Da Git a Github
-
-***
+**COLLABORAZIONE TRA DUE UTENTI [da Git a Github]**
+<br />
 
 * IN USER02
 1. git clone ssh://[user@]host.xz[:port]/path/to/repo.git
-2. "visualizza"
+2. _visualizza_
 3. git branch
 4. git branch -a
+<br />
 
 * IN USER01
 1. vim sayhello.sh
 2. git add sayhello.sh
 3. git commit -a
 4. messaggio di commit
-5. "visualizza" in user01 e in user02
+5. _visualizza_ in user01 e in user02
+<br />
 
 * IN USER02
 1. git fetch
-2. "visualizza"
+2. _visualizza_
 3. per vedere qualche info in più:
 	* git branch -avv
 4. git merge origin/master
 5. è possibile unire fetch e merge in un unico comando
 	* git pull
+<br />
 
---> GITHUB
+**GITHUB**
+<br />
+
 * Crea nuova repository su github.com
 * In user01
 1. git remote add origin [id_github]
@@ -214,7 +234,7 @@ Da Git a Github
 6. git push -u origin master
 7. inserire username e la password di github
 
---> PASSARE A SSH
+* PASSARE A SSH
 1. cat .git/config
 2. prendi url ssh da github.com
 3. vim .git/config
@@ -222,4 +242,8 @@ Da Git a Github
 5. vim sayhello.sh
 6. git add sayhello.sh
 7. git commit -a
-8. messaggio di commit
+8. _messaggio di commit_
+
+
+
+
