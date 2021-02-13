@@ -332,3 +332,13 @@ echo "hello!"
 8. git rebase --continue
 9. git push github fix01
 10. git push github fix01 --force
+
+<br />
+
+* USER01 DA GITHUB
+1. merge della pull request
+
+<br />
+
+***
+# THE END!
