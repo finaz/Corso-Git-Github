@@ -273,7 +273,18 @@ echo "hello!"
 12. create la vostra pull request con messaggio
 13. da user01 "merge pull" e "confirm merge"
 
-<br /> 
+<br />
+* RECUPERARE MODIFICHE USER01
+1. git fetch origin master
+2. git rebase origin/master
+
+<br />
+
+* RECUPERARE MODIFICHE USER02
+1. git fetch origin master
+2. git rebase origin/master
+<br />
+
 
 ***
 ### NB. PER APRIRE PULL REQUEST DA USER OWNER, OCCORRE APRIRE UN NUOVO BRANCH [NOME = prova1] MODIFICARE DA ESSO I FILE E LANCIARE: git push --set-upstream origin prova1
@@ -302,4 +313,22 @@ echo "hello!"
 18. git push github fix02
 19. apri pull request su github.com
 20. doppia richiesta con conflitto verso origin/master di user01
+<br />
 
+* USER01 DA GITHUB
+1. merge della seconda pull request [fix02]
+2. la prima pull request entrerà in conflitto
+
+<br />
+
+* USER02 RISOLUZIONE CONFLITTO
+1. git checkout fix01
+2. git fetch origin
+3. _visualizza_
+4. git rebase origin/master
+5. vim sayhello.com
+6. risolvi il conflitto
+7. git add sayhello.sh
+8. git rebase --continue
+9. git push github fix01
+10. git push github fix01 --force
