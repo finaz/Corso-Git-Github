@@ -267,5 +267,11 @@ echo "hello!"
 6. git config --global user.name 'yourname'
 7. git commit -a
 8. _messaggio di commit_
+9. _visualizza_
+10. git push github master
+11. se occorre una chiave ssh ripeti operzaione con ssh-keygen e collegala a github.com
+12. create la vostra pull request con messaggio
+13. da user01 "merge pull" e "confirm merge"
 
+<br /> 
 
