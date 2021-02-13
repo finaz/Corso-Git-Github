@@ -275,4 +275,31 @@ echo "hello!"
 
 <br /> 
 
-* RECUPERARE MODIFICHE USER01
+***
+### NB. PER APRIRE PULL REQUEST DA USER OWNER, OCCORRE APRIRE UN NUOVO BRANCH [NOME = prova1] MODIFICARE DA ESSO I FILE E LANCIARE: git push --set-upstream origin prova1
+***
+
+<br />
+
+* DOPPIA MODIFICA DA USER02
+1. git branch fix01
+2. git branch fix02
+3. _visualizza_
+4. git checkout fix01
+5. vim sayhello.sh
+6. git add sayhello.sh
+7. git commit -a
+8. _messaggio di commit_
+9. git push github fix01
+10. apri pull request su github.com
+11. git checkout fix02
+12. vim README.md
+13. vim sayhello.sh
+14. git add README.md
+15. git add sayhello.sh
+16. git commit -a
+17. _messaggio di commit_
+18. git push github fix02
+19. apri pull request su github.com
+20. doppia richiesta con conflitto verso origin/master di user01
+
