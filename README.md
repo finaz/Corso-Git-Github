@@ -54,8 +54,8 @@ echo "hello!"
 ***
 
 ### !!! DEVI INSERIRE INFORMAZIONI UTENZA !!!
-1. git config --global user.email 'xxxxxxxx@yyyyy.com'
-2. git config --global user.name 'xyxyxyx'
+1. git config --global user.email 'your@email.com'
+2. git config --global user.name 'yourname'
 3. rifai: git commit
 
 ***
@@ -243,7 +243,29 @@ echo "hello!"
 6. git add sayhello.sh
 7. git commit -a
 8. _messaggio di commit_
+9. git push origin master
 
+<br />
 
+* COLLABORAZIONE TRA UTENTI
+1. In user02 rimuovi cartella precedente:
+	* rm -rf project01/
+2. su github.com cerca il progetto di user01
+3. clona repository di user01
+	* git clone [https://github.com/user01/nomeprogetto]
+4. cd project01/
+5. _visualizza_
+
+<br />
+
+* MODIFICA E PUSH DA USER02
+1. creare un fork dal progetto su github.com
+2. git remote add github [SSH_key]
+3. vim sayhello.sh
+4. git add sayhello.sh
+5. git config --global user.email 'your@email.com'
+6. git config --global user.name 'yourname'
+7. git commit -a
+8. _messaggio di commit_
 
 
