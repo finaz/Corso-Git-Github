@@ -11,13 +11,13 @@ Guida passo per passo al successo!
 <br />
 
 * CREAZIONE CARTELLA DI LAVORO IN USER01
-1. mkdir project01
-2. cd project01
+1. ``` mkdir project01 ```
+2. ``` cd project01 ```
 
 <br />
 
 * FAI PRIMO SCRIPT
-1. vim sayhello.sh
+1. ``` vim sayhello.sh ```
 ```
 #!/bin/bash
 
