@@ -32,7 +32,7 @@
 	fi
 	```
 4. Infine, installare i fonts powerline:
-	* ``` sudo apt-get install fonts-powerline
+	* ``` sudo apt-get install fonts-powerline ```
 
 <br />
 <br />
