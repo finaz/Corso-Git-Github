@@ -38,6 +38,9 @@
 <br />
 
 ### Ottimo! Ora dovresti avere una powerline funzionante!
+
 <br />
+
 ***
-# THE END
+
+## THE END
